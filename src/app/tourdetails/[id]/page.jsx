@@ -41,7 +41,7 @@ const TourDetails = () => {
         </div>
         <TourImg image={image} />
       </div>
-      <div class="flex sm:flex-row flex-col justify-between py-4 space-x-6 w-full my-4 px-4">
+      <div className="flex sm:flex-row flex-col justify-between py-4 space-x-6 w-full my-4 px-4">
         {/* <!-- Left Part --> */}
         <div class="w-full sm:w-2/3">
           <p class="text-sm font-semibold">{desc}</p>

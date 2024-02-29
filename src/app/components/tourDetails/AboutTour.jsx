@@ -33,10 +33,10 @@ const AboutTour = () => {
     <>
       <div className="text-xl font-semibold">About this Ticket</div>
       <div className="flex flex-col gap-4 py-4">
-        {features?.map((item) => {
+        {features?.map((item, index) => {
           return (
             <>
-              <div className="flex mx-4 gap-4">
+              <div className="flex mx-4 gap-4" key={index}>
                 {item.icon}
                 <div className="text-sm">
                   <div className="mb-2 font-semibold">{item.title}</div>

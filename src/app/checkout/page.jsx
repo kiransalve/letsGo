@@ -12,6 +12,7 @@ import toast from "react-hot-toast";
 
 const CheckOut = () => {
   const orderItem = useSelector((state) => state.order.orderData);
+console.log(orderItem)
   const [person, setPerson] = useState(1);
   const [time, setTime] = useState("10:00 AM");
   const [user, setUser] = useState();
