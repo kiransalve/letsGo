@@ -8,8 +8,8 @@ import { useSession } from "next-auth/react";
 const BookingForm = ({ price, menuItem }) => {
   const dispatch = useDispatch();
   const { status } = useSession();
-
   const handleOrderBooking = () => {
+    console.log(menuItem, "after clicked")
     dispatch(saveOrder(menuItem));
   };
 

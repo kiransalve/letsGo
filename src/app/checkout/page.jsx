@@ -17,14 +17,12 @@ const CheckOut = () => {
   const [user, setUser] = useState();
   const { loading, data } = UserProfile();
   const session = useSession();
-
   const router = useRouter();
 
   const tomorrow = new Date();
   tomorrow.setDate(new Date().getDate() + 3);
   const tomorrowISO = tomorrow.toISOString().split("T")[0];
   const [date, setDate] = useState(tomorrowISO);
-  console.log(user)
   useEffect(() => {
     setUser(data._id);
   }, [data]);
