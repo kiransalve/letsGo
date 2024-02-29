@@ -1,0 +1,29 @@
+/* styles/globals.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.inputStyle {
+  @apply block w-full my-4 rounded-xl;
+  @apply border p-2 border-slate-500 outline-slate-700 bg-gray-200 block;
+}
+
+.inputStyle:disabled {
+  @apply bg-gray-400 border-0 cursor-not-allowed text-gray-800;
+}
+
+label {
+  @apply text-sm text-gray-500;
+}
+
+.googleBtn {
+  @apply block w-full border-slate-700;
+}
+
+div.tabs > * {
+  @apply bg-slate-500 text-gray-50 rounded-lg py-2 px-4;
+}
+
+div.tabs > *.active {
+  @apply bg-slate-800 text-white;
+}
